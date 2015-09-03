@@ -1,0 +1,16 @@
+# Logfile created on 2015-09-03 13:30:53 +0800 by logger.rb/36483
+I, [2015-09-03T13:30:53.273124 #76167]  INFO -- : Starting app Products Service #<Pact::MockService::App:0x007ffeac5d0298> on port 8181...
+I, [2015-09-03T13:30:54.001244 #76167]  INFO -- : Started on port 8181
+I, [2015-09-03T13:30:54.001796 #76167]  INFO -- : Clearing all expectations
+I, [2015-09-03T13:30:54.016203 #76167]  INFO -- : Verifying interactions for ContractServiceGateway get_products returns products
+D, [2015-09-03T13:30:54.024540 #76167] DEBUG -- : Supposed to be stopping
+I, [2015-09-03T13:31:27.259392 #76277]  INFO -- : Starting app Products Service #<Pact::MockService::App:0x007fab3240c538> on port 8181...
+I, [2015-09-03T13:31:27.374107 #76277]  INFO -- : Started on port 8181
+I, [2015-09-03T13:31:27.374706 #76277]  INFO -- : Clearing all expectations
+I, [2015-09-03T13:31:27.387034 #76277]  INFO -- : Verifying interactions for ContractServiceGateway get_products returns products
+D, [2015-09-03T13:31:27.393121 #76277] DEBUG -- : Supposed to be stopping
+I, [2015-09-03T13:35:25.593002 #76643]  INFO -- : Starting app Products Service #<Pact::MockService::App:0x007f85134f42d8> on port 8181...
+I, [2015-09-03T13:35:26.334749 #76643]  INFO -- : Started on port 8181
+I, [2015-09-03T13:35:26.335337 #76643]  INFO -- : Clearing all expectations
+I, [2015-09-03T13:35:26.346831 #76643]  INFO -- : Verifying interactions for ContractServiceGateway get_products returns products
+D, [2015-09-03T13:35:26.353118 #76643] DEBUG -- : Supposed to be stopping

@@ -1,0 +1,68 @@
+I, [2015-09-03T13:35:26.338569 #76643]  INFO -- : Cleared interactions before example "ContractServiceGateway get_products returns products"
+I, [2015-09-03T13:35:26.341992 #76643]  INFO -- : Registered expected interaction GET /products
+D, [2015-09-03T13:35:26.342116 #76643] DEBUG -- : {
+  "description": "a request for all products",
+  "provider_state": "products exist",
+  "request": {
+    "method": "get",
+    "path": "/products"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/hal+json"
+    },
+    "body": {
+      "products": [
+        {
+          "id": 1,
+          "name": "Docker In Action",
+          "price": "59.00"
+        },
+        {
+          "id": 2,
+          "name": "Agile In Action",
+          "price": "55.00"
+        }
+      ]
+    }
+  }
+}
+I, [2015-09-03T13:35:26.345420 #76643]  INFO -- : Received request GET /products
+D, [2015-09-03T13:35:26.345496 #76643] DEBUG -- : {
+  "path": "/products",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept-Encoding": "gzip;q=1.0,deflate;q=0.6,identity;q=0.3",
+    "Accept": "*/*",
+    "User-Agent": "Ruby",
+    "Connection": "close",
+    "Host": "localhost:8181",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2015-09-03T13:35:26.345621 #76643]  INFO -- : Found matching response for GET /products
+D, [2015-09-03T13:35:26.345685 #76643] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/hal+json"
+  },
+  "body": {
+    "products": [
+      {
+        "id": 1,
+        "name": "Docker In Action",
+        "price": "59.00"
+      },
+      {
+        "id": 2,
+        "name": "Agile In Action",
+        "price": "55.00"
+      }
+    ]
+  }
+}
+I, [2015-09-03T13:35:26.349313 #76643]  INFO -- : Verifying - interactions matched for example "ContractServiceGateway get_products returns products"
+I, [2015-09-03T13:35:26.352078 #76643]  INFO -- : Writing pact with details {:consumer=>{:name=>"Contracts Service"}, :provider=>{:name=>"Products Service"}, :pactfile_write_mode=>"overwrite", :pact_dir=>"/Users/leiwang/Work/microservice/gitbook/Micro-Service-In-Analysis-Code/microservice-testing/contracts-service/spec/pacts"}
+I, [2015-09-03T13:35:26.352148 #76643]  INFO -- : Writing pact for Products Service to /Users/leiwang/Work/microservice/gitbook/Micro-Service-In-Analysis-Code/microservice-testing/contracts-service/spec/pacts/contracts_service-products_service.json
