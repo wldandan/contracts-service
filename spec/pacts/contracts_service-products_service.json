@@ -1,0 +1,49 @@
+{
+  "consumer": {
+    "name": "Contracts Service"
+  },
+  "provider": {
+    "name": "Products Service"
+  },
+  "interactions": [
+    {
+      "description": "a request for all products",
+      "provider_state": "products exist",
+      "request": {
+        "method": "get",
+        "path": "/products"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/hal+json"
+        },
+        "body": {
+          "_links": {
+            "self": {
+              "href": "http://example.org/products"
+            }
+          },
+          "count": 2,
+          "_embedded": {
+            "products": [
+              {
+                "id": 1,
+                "name": "Docker In Action",
+                "price": "59.00"
+              },
+              {
+                "id": 2,
+                "name": "Agile In Action",
+                "price": "55.00"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecificationVersion": "1.0.0"
+  }
+}
