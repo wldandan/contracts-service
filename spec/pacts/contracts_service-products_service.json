@@ -19,18 +19,26 @@
           "Content-Type": "application/hal+json"
         },
         "body": {
-          "products": [
-            {
-              "id": 1,
-              "name": "Docker In Action",
-              "price": "59.00"
-            },
-            {
-              "id": 2,
-              "name": "Agile In Action",
-              "price": "55.00"
+          "_links": {
+            "self": {
+              "href": "http://example.org/products"
             }
-          ]
+          },
+          "count": 2,
+          "_embedded": {
+            "products": [
+              {
+                "id": 1,
+                "name": "Docker In Action",
+                "price": "59.00"
+              },
+              {
+                "id": 2,
+                "name": "Agile In Action",
+                "price": "55.00"
+              }
+            ]
+          }
         }
       }
     }
